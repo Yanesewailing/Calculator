@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+
+.body {
+  width: 350px;
+  border: 1px solid;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 5px 20px;
+  background: #d7ccc8;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75),
+    inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75),
+    inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75),
+    inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+}
+
+.header {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.results {
+  width: 92.3%;
+  margin: 20px auto;
+  font-family: "Audiowide", cursive;
+  text-align: right;
+}
+#expression,
+#result {
+  background: #607d8b;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding-right: 5px;
+}
+#result {
+  height: 50px;
+  font-size: 2em;
+  border-bottom: none;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#expression {
+  height: 20px;
+  border-top: none;
+  color: #263238;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  overflow: hidden;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.operations,
+.clears {
+  display: flex;
+  flex-direction: column;
+}
+.operations * {
+  font-size: 1.5em;
+}
+
+.clears * {
+  background: #ef5350;
+  color: white;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  text-align: center;
+  outline: none;
+  font-family: "Audiowide", cursive;
+  -webkit-box-shadow: 0px 3px 0px 0px #212121;
+  -moz-box-shadow: 0px 3px 0px 0px #212121;
+  box-shadow: 0px 3px 0px 0px #212121;
+}
+button:active {
+  transform: translateY(2px);
+}
+
+.number,
+.operation,
+.equals {
+  background: #263238;
+  color: white;
+}
